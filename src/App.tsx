@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import falz from "./assets/falz.jpg";
 
 function App() {
   const calculateTimeLeft = () => {
@@ -32,8 +33,8 @@ function App() {
   }, []);
 
   return (
-    <div className="grid md:grid-cols-2 gap-10 ">
-      <div className=" flex flex-col items-center justify-center">
+    <div className="grid md:grid-cols-2 gap-10 h-screen ">
+      <div className=" flex flex-col  h-full items-center justify-center">
         <div className="stats shadow">
           <div className="stat">
             <div className="stat-value md:text-4xl text-lg">
@@ -77,11 +78,8 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="">
-        <img
-          className=" object-fit"
-          src="https://pbs.twimg.com/media/GO2HHRSXkAE-oYW?format=jpg&name=large"
-        />
+      <div className=" ">
+        <img className=" object-fit" src={falz} />
       </div>
     </div>
   );
