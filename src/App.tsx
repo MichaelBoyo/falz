@@ -3,7 +3,7 @@ import falz from "./assets/falz.jpg";
 
 function App() {
   const calculateTimeLeft = () => {
-    const targetDate = new Date("2024-06-07T00:00:00");
+    const targetDate = new Date("2024-06-17T00:00:00");
     const now = new Date();
     //@ts-expect-error hello
     const difference = targetDate - now;
